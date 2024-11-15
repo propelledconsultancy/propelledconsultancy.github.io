@@ -1,0 +1,82 @@
+
+
+.parallax-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+.parallax-container .parallax-row {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-row{
+    min-height: 100vh;
+    min-width: 100%;
+}
+.parallax-container .parallax-row:nth-child(1) .image {
+  background-image: url(/imgs/header_placeholder_1.jpg);
+    object-fit: cover;
+}
+.parallax-container .parallax-row:nth-child(2) .image {
+  background-image: url(/imgs/header_placeholder_2.jpg);
+}
+.parallax-container .parallax-row:nth-child(3) .image {
+  background-image: url(/imgs/header_placeholder_7.jpg);
+}
+.parallax-container .parallax-row:nth-child(4) .image {
+  background-image: url(/imgs/header_placeholder_4.jpg);
+}
+.parallax-container .parallax-row:nth-child(5) .image {
+  background-image: url(/imgs/header_placeholder_5.jpg);
+}
+.parallax-container .parallax-row:nth-child(6) .image {
+  background-image: url(/imgs/header_placeholder_6.jpg);
+}
+.parallax-container .parallax-row .image {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+  opacity: 0.4;
+}
+.parallax-container .parallax-row .stuff {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  position: relative;
+}
+.parallax-container .parallax-row .stuff h2 {
+  margin: 0;
+}
+.parallax-container .parallax-row .stuff:before, .parallax-container .parallax-row .stuff:after {
+  width: 100%;
+  height: 1px;
+  display: block;
+  content: "";
+}
+
+.prpld-brand{
+    height: 48px;
+}
+.prpld-brand-propellor{
+    left : 4px;
+}

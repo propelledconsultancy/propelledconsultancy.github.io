@@ -46,10 +46,10 @@
     position: absolute;
     left: 19px; 
     top: 5px;
-    transition: rotate 3s ease-in;
-    -webkit-transition: all 3s ease-out;
-    -moz-transition: all 3s ease-out;
-    -o-transition: all 3s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
     rotate: 0deg;
 }
 

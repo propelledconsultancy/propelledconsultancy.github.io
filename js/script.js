@@ -1,11 +1,7 @@
 var logoRotation = 0;
 
 $(document).ready(function(){
-    rotateLogo(1080);
-    $(".prpld-brand-propellor").on('mousemove', function(){
-        rotateLogo(180);
-        
-    });
+    rotateLogo(1090);
 });
 
 
