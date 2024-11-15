@@ -1,3 +1,21 @@
+var logoRotation = 0;
+
 $(document).ready(function(){
-    $(".prpld-brand-propellor").css( {'transform': 'rotate(1800deg)'});
+    rotateLogo(1080);
+    $(".prpld-brand-propellor").on('mousemove', function(){
+        rotateLogo(180);
+        
+    });
 });
+
+
+function rotateLogo(degrees){
+    let deg = logoRotation + degrees;
+    logoRotation = deg;
+    propellor = document.getElementsByClassName("prpld-brand-propellor")[0];
+    propellor.style.webkitTransform = 'rotate('+deg+'deg)'; 
+    propellor.style.mozTransform    = 'rotate('+deg+'deg)'; 
+    propellor.style.msTransform     = 'rotate('+deg+'deg)'; 
+    propellor.style.oTransform      = 'rotate('+deg+'deg)'; 
+    propellor.style.transform       = 'rotate('+deg+'deg)'; 
+}
