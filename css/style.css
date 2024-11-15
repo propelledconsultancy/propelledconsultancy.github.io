@@ -1,0 +1,54 @@
+
+@font-face{
+    font-family: "Luna Bar";
+    src: url(/fonts/LUNABAR_.TTF);
+}
+
+@font-face{
+    font-family: "Castellar";
+    src: url(/fonts/castellar-regular.ttf);
+}
+@font-face{
+    font-family: "Copperplate Gothic Bold";
+    src: url(/fonts/copperplategothic_bold.ttf);
+}
+
+:root{
+    --primary: #2F4156;
+}
+
+.lunabar{
+    font-family: 'Luna Bar';
+}
+.castellar{
+    font-family: 'Castellar';
+}
+.copperplate{
+    font-family: 'Copperplate Gothic Bold';
+}
+
+
+.bg-primary{
+    background-color: var(--primary) !important;
+    color: #fff;
+}
+.prpld-brand{
+    height: 200px;
+}
+
+.prpld-nav{
+    color: #fff !important;
+    font-family: 'Copperplate Gothic Bold';
+}
+
+.prpld-nav > a{
+    color: #fff;
+}
+
+.prpld-nav > a.active{
+    color: #fff !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(/icons/menu.svg);
+}
