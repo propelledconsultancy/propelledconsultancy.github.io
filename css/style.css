@@ -30,7 +30,14 @@
 .img-header{
     object-fit: cover;
     object-position: center;
-    height: 75vh;
+    height: 100vh;
+}
+
+.svg-header{
+    width: 272px;
+    transition: all 1s ease-in-out;
+    background-color: var(--primary);
+    border-radius: 50%;
 }
 
 .bg-primary{
@@ -38,7 +45,7 @@
     color: #fff;
 }
 .prpld-brand{
-    height: 200px;
+    height: 199px;
 }
 
 .prpld-brand-propellor{
@@ -69,3 +76,44 @@
 .navbar-toggler-icon{
     background-image: url(/icons/menu.svg);
 }
+
+
+
+.prpld-header{
+    position: relative;
+    top: 35vh;
+    z-index: 100;
+}
+
+.img-header-container{
+    top: 0;
+    padding: 0;
+    position:absolute;
+    margin-bottom: 10px;
+}
+
+main{
+    margin-top: 100vh;
+}
+
+
+.sticky{
+    top: 0;
+    position: sticky;
+  
+}
+
+.navbar-toggler{
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+}
+
+.sticky .svg-header{
+    width: 120px;
+}
+
+#at_1{
+    animation: ease-out;
+}
+
