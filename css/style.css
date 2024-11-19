@@ -25,6 +25,8 @@
 :root{
     --primary: #2F4156;
     --secondary: #C8D9E6;
+    --tertiary: #BF9249;
+
 }
 *{
     font-family: "Poppins";
@@ -103,6 +105,13 @@ p{
 
 .navbar-toggler-icon{
     background-image: url(/icons/menu.svg);
+}
+
+.btn-primary{
+    background-color: var(--tertiary);
+    font-family: 'Copperplate Gothic Bold';
+    border-color: var(--tertiary);
+    border-radius: 32px;
 }
 
 
