@@ -13,10 +13,25 @@
     src: url(/fonts/copperplategothic_bold.ttf);
 }
 
-:root{
-    --primary: #2F4156;
+@font-face{
+    font-family: "Poppins";
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+@font-face{
+    font-family: "Poppins light";
+    src: url(/fonts/Poppins-Light.ttf);
 }
 
+:root{
+    --primary: #2F4156;
+    --secondary: #C8D9E6;
+}
+*{
+    font-family: "Poppins";
+}
+p{
+    line-height: 1.6em;
+}
 .lunabar{
     font-family: 'Luna Bar';
 }
@@ -25,6 +40,14 @@
 }
 .copperplate{
     font-family: 'Copperplate Gothic Bold';
+}
+
+.poppins-light{
+    font-family: 'Poppins Light';
+}
+
+.vh-75{
+   min-height: 75vh;
 }
 
 .img-header{
@@ -44,9 +67,14 @@
     background-color: var(--primary) !important;
     color: #fff;
 }
+
+.bg-secondary{
+    background-color: var(--secondary) !important;
+}
 .prpld-brand{
     height: 199px;
 }
+
 
 .prpld-brand-propellor{
     z-index: 1;
@@ -96,6 +124,9 @@ main{
     margin-top: 100vh;
 }
 
+nav{
+    box-shadow: 0 5px 13px rgba(255, 255, 255, 0.2);
+}
 
 .sticky{
     top: 0;
@@ -129,3 +160,9 @@ main{
     transform-origin: center;
 }
 
+.pyf-item svg{
+    height: 90px;
+}
+.pyf-item p{
+    max-width: 360px;
+}
