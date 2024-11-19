@@ -113,7 +113,19 @@ main{
     width: 120px;
 }
 
-#at_1{
+#svg_logo_propellor{
     animation: ease-out;
+    transition: all 1.5s ease-in-out;
+    transform-origin: center;
+}
+#svg_logo_o{
+    animation: ease-out;
+    transition: all 1.5s ease-in-out;
+    transform-origin: center;
+}
+#svg_logo_center{
+    animation: ease-out;
+    transition: all 1.5s ease-in-out;
+    transform-origin: center;
 }
 
