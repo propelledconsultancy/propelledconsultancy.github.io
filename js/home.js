@@ -10,6 +10,16 @@ $(document).ready(function () {
     };
     myFunction();
     rotateLogo();
+    
+    $("#propelled_contact_mail_2").on('click', function(e){
+        e.preventDefault();
+        copyMailToClipboard();
+    });
+    
+    $("#propelled_contact_mail_1").on('click', function(e){
+        e.preventDefault();
+        copyMailToClipboard();
+    });
 });
 
 function myFunction() {
@@ -38,9 +48,16 @@ function rotateLogo() {
 function rotateLogoBack() {
     var part1 = document.getElementById("svg_logo_propellor");
     var part2 = document.getElementById("svg_logo_o");
-     var part3 = document.getElementById("svg_logo_center");
+    var part3 = document.getElementById("svg_logo_center");
     part1.style.transform = "rotate(0deg)";
     part2.style.transform = "rotate(0deg)";
     part3.style.transform = "rotate(0deg)";
     totalRotation = 0;
+}
+
+function copyMailToClipboard() {
+    navigator.clipboard.writeText("propelled.consultancy@gmail.com");
+    var toastLiveExample = document.getElementById("liveToast");
+    var toast = new bootstrap.Toast(toastLiveExample);
+    toast.show();
 }
